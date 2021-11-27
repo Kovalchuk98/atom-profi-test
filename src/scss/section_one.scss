@@ -1,0 +1,43 @@
+// .wrapper {
+.section_one {
+  position: relative;
+  .header_img {
+    // margin-top: 70px;
+    min-height: 300px;
+    height: 100%;
+    object-fit: cover;
+  }
+  .title_wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 40%;
+
+    .title_text {
+      display: block;
+      font-size: 25px;
+      font-weight: 700;
+      color: #fff;
+    }
+    .signup_btn {
+      text-decoration: none;
+      margin-top: 30px;
+      font-size: 13px;
+      color: #fff;
+      padding: 12px 31px;
+      background-color: #f0a600;
+      font-weight: 700;
+    }
+  }
+}
+// }
+
+// @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 576px) {
+  .section_one {
+    .header_img {
+      margin-top: 70px;
+    }
+  }
+}

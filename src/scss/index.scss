@@ -1,0 +1,55 @@
+@import "./header.scss";
+@import "./section_one.scss";
+@import "./section_three.scss";
+@import "./scaffolding.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Fira Sans" sans-serif;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+@media (min-width: 575.98px) {
+  .container {
+    max-width: 540px;
+    margin: auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1199.98px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+// .container {
+//   // display: flex;
+//   max-width: 1000px;
+//   margin: 0 auto;
+// }
+
+// @media only screen and (max-width: 768px) {
+//   .container {
+//     max-width: 280px;
+//   }
+// }
