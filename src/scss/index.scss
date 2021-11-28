@@ -1,11 +1,23 @@
-@import "./header.scss";
-@import "./section_one.scss";
-@import "./section_three.scss";
 @import "./scaffolding.scss";
+@import "./section_one.scss";
+@import "./section_two.scss";
+@import "./section_three.scss";
+@import "./banner.scss";
+@import "./header.scss";
 
 * {
   margin: 0;
   padding: 0;
+}
+
+.signup_btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: #f0a600;
+  transition: 0.3s all ease;
+  &:hover {
+    background-color: #ee6c23;
+  }
 }
 
 body {
@@ -16,40 +28,44 @@ body {
   padding: 0 20px;
 }
 
+.header {
+  padding: 0;
+}
+
 @media (min-width: 575.98px) {
-  .container {
+  .container,
+  .header {
     max-width: 540px;
+    width: 100%;
     margin: auto;
     padding: 0;
   }
 }
 
 @media (min-width: 767.98px) {
-  .container {
+  .container,
+  .header {
     max-width: 720px;
   }
 }
 
 @media (min-width: 991.98px) {
-  .container {
+  .container,
+  .header {
     max-width: 960px;
   }
 }
 
 @media (min-width: 1199.98px) {
-  .container {
+  .container,
+  .header {
     max-width: 1140px;
   }
 }
 
-// .container {
-//   // display: flex;
-//   max-width: 1000px;
-//   margin: 0 auto;
-// }
-
-// @media only screen and (max-width: 768px) {
-//   .container {
-//     max-width: 280px;
-//   }
-// }
+@media (min-width: 1559.98px) {
+  .container,
+  .header {
+    max-width: 1440px;
+  }
+}

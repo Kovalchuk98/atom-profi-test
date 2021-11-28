@@ -6,9 +6,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const conf = {
   mode: "development",
   devtool: "inline-source-map",
-  devServer: {
-    //contentBase: path.resolve(__dirname, 'dist')
-  },
+  devServer: {},
   entry: {
     index: "./src/index.js",
   },
@@ -31,16 +29,26 @@ const conf = {
         ],
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/,
+        test: /\.(jpe?g|png|gif|svg|ico)$/,
         loader: "file-loader",
         options: {
           name: "[name].[ext]",
           outputPath: "/img",
-          //   outputPath: path.resolve(__dirname, "dist/img/"),
           publicPath: "./src/public/img",
-          //   publicPath: "public/img",
-          //   publicPath: "./src/public/img",
         },
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "/fonts",
+              publicPath: "./src/public/fonts",
+            },
+          },
+        ],
       },
     ],
   },

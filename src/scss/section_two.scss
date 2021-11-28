@@ -1,2 +1,152 @@
 .section_two {
+  position: relative;
+  .text_wrapper {
+    width: 100%;
+    .text {
+      padding: 60px 0;
+      font-size: 13px;
+    }
+    .dots {
+      position: absolute;
+      top: -44px;
+      right: 50px;
+    }
+    .purple_corner {
+      position: absolute;
+      top: 21px;
+      left: 8px;
+    }
+    .orange {
+      position: absolute;
+      left: 118px;
+      bottom: 20px;
+      z-index: 1;
+    }
+    .green {
+      position: absolute;
+      bottom: -11px;
+      right: 20px;
+      z-index: 1;
+    }
+    .orange_corner {
+      display: none;
+    }
+    .blue_bars {
+      display: none;
+    }
+    .dark_green {
+      display: none;
+    }
+    .blue_bars_full {
+      display: none;
+    }
+    .dark_green_full {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .section_two {
+    .text_wrapper {
+      .text {
+        padding: 175px 0;
+        margin: 0 auto;
+        font-size: 30px;
+        max-width: 900px;
+      }
+
+      .dots {
+        width: 300px;
+        right: 404px;
+        top: -123px;
+      }
+      .purple_corner {
+        width: 35px;
+        top: 65px;
+        left: 185px;
+      }
+      .orange {
+        width: 97px;
+        bottom: 62px;
+        left: 75px;
+      }
+      .green {
+        width: 124px;
+        bottom: -50px;
+        right: 251px;
+      }
+      .orange_corner {
+        display: flex;
+        position: absolute;
+        width: 74px;
+        top: 100px;
+        right: 168px;
+      }
+      .blue_bars {
+        display: flex;
+        position: absolute;
+        height: 135px;
+        top: 100px;
+        right: 0px;
+      }
+      .dark_green {
+        display: flex;
+        position: absolute;
+        width: 74px;
+        top: 174px;
+        left: 0px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .section_two {
+    .text_wrapper {
+      margin: 0 auto;
+      .text {
+        max-width: 1170px;
+        font-size: 30px;
+      }
+      .dots {
+        right: 855px;
+      }
+      .purple_corner {
+        top: 65px;
+        left: 601px;
+      }
+      .orange {
+        left: 618px;
+        bottom: 63px;
+      }
+      .orange_corner {
+        right: 635px;
+        top: 100px;
+      }
+      .green {
+        bottom: -50px;
+        right: 701px;
+        z-index: 1;
+      }
+      .blue_bars {
+        display: none;
+      }
+      .dark_green {
+        display: none;
+      }
+      .blue_bars_full {
+        display: flex;
+        position: absolute;
+        top: 100px;
+        right: 320px;
+      }
+      .dark_green_full {
+        display: flex;
+        position: absolute;
+        top: 174px;
+        left: 254px;
+      }
+    }
+  }
 }
